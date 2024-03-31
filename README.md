@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Watch List
+Watch List is a web application that allows users to keep track of their watch collection. Users can add watches to their list, edit watch details, and delete watches they no longer own. The application uses Supabase for authentication and data storage, providing a secure and reliable backend for managing user data.
 
-## Getting Started
+Features
+Add watches: Users can add new watches to their collection by entering the brand, model, and reference number.
+Edit watches: Users can edit the details of existing watches, such as the brand, model, and reference number.
+Delete watches: Users can delete watches from their collection if they no longer own them.
+Authentication: The application uses Supabase authentication to secure user accounts and data.
+Technologies Used
+React for building the user interface.
+Supabase for authentication and data storage.
+Tailwind CSS for styling the application.
+Next.js for server-side rendering and routing.
+Getting Started
+To run the application locally, follow these steps:
 
-First, run the development server:
+Clone the repository: git clone https://github.com/your-username/watch-list.git
+Navigate to the project directory: cd watch-list
+Install dependencies: npm install
+Set up environment variables: Create a .env.local file in the root directory and add your Supabase URL and API key:
+makefile
+Copy code
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_KEY=your-supabase-api-key
+Start the development server: npm run dev
+Open your browser and navigate to http://localhost:3000 to view the application.
+Contributing
+Contributions are welcome! If you have any ideas, suggestions, or improvements, feel free to open an issue or create a pull request.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
